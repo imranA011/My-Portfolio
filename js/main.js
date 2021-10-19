@@ -1,4 +1,4 @@
-const toggleButton =document.getElementsByClassName('mobile-menu')[0];
+const toggleButton =document.getElementsByClassName('toggle-icon')[0];
 const navMenu = document.getElementsByClassName('primary-nav');
 toggleButton.addEventListener('click', function(){
    for(var i=0; i<navMenu.length; i++)
