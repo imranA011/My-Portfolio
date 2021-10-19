@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans&family=Raleway&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+
+/* =============================
+       Basic Styles 
+=============================== */
+:root{
+  --primary-color:#0382E1;
+  --secondary-color:#1B9CFC;
+  --body-color:#e6e6e6;
+   
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', 'Italianno', cursive,'Open Sans', sans-serif;
+  background-color:var(--body-color);
+  height: 100vh;
+  font-size: 15px;
+  line-height: 1.6rem;
+}
+h1{
+  font-size: 40px;
+  
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 14px;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.container{
+  width:80vw;
+  margin:0 auto;
+}
+/* =============================
+    Header CSS Part
+=============================== */
+header{
+  background:var(--body-color)
+}
+.navbar{
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  align-items: center;
+  min-height:70px;
+}
+/* =============================
+     LOGO
+=============================== */
+.navbar-brand{
+  font-size: 3rem;
+  font-family:Italianno, sans-serif;
+  font-weight: 700;
+}
+.logo span{
+ color: var(--primary-color);
+}
+/* =============================
+  HAMBURGER MENU
+=============================== */
+.toggle-icon{
+position: absolute;
+right: 4em;
+height: 25px;
+width: 30px;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+cursor: pointer;
+}
+.toggle-icon>.bars{
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+/* =============================
+      PRIMARY MENU
+=============================== */
+.primary-menu ul{
+  display: flex;
+  gap: 2.5rem;
+}
+.primary-menu ul li a{
+  font-size: 16px;
+  font-weight: 400;
+}
+.primary-menu ul li a:hover{
+  color: var(--primary-color);
+  transition:.3s ease-out;
+}
+.primary-menu ul li a.current{
+  font-weight: 700;
+}
+.divider{
+  background-color: #ddd;
+}
+/* =============================
+    Hero Section starts
+=============================== */
+#hero{
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+.sub-title{
+  font-weight: 300 ;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  text-align: center;
+  padding-top: 5em;
+}
+.title{
+  font-weight: 700; 
+  font-family: cursive, sans-serif;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+}
+.hero-slider{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-slider > * {
+  flex:1 1 25em;
+  padding: 2em;
+}
+.left-col h3{
+  font-family: cursive, sans-serif;
+  margin-top: 2em;
+}
+.left-col p{
+  padding-top: 1.2em;
+}
+.left-col a.btn{
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  padding: .6em 1.5em;
+  margin-top: 1.5em;
+  border-radius: .4rem;
+  display: inline-block;
+}
+.left-col a.btn:hover{
+  background-color: var(--secondary-color);
+  color: #fff;
+  transition: .5s ease-out;
+}
+.right-col{
+  text-align: center;
+}
+.right-col img.brand-image{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.right-col ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.right-col ul li{
+  padding: 1rem;
+}
+.right-col ul li a{
+  font-size: 2.2rem;
+  color: var(--primary-color);  
+}
+.right-col ul li a:hover{
+ color: var(--secondary-color); 
+ transition: .5s ease-out;
+} 
+ 
+/* =============================
+    Service Section Starts
+=============================== */
+
+.service-title{
+  text-align: center;
+  margin-top: .5em;
+  color: var(--secondary-color);
+  font-family: cursive;
+  font-weight: 700;
+}
+.services{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3em;
+  
+}
+.services > * {
+  flex:1 1 20em;
+}
+.features{
+  background-color: #fff;
+  border-radius:12px;
+  padding: 2rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.5s;
+}
+.features:hover{
+  transform:scale(1.1);
+}
+.feature-image{
+  height:100px;
+  border-radius: 5px;
+}
+.features h4{
+  margin: 1rem 0;
+}
+.features p{
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+.feature-btn{
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  padding: .7em 1.5em;
+  margin-top: 1.5em;
+  border:none;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+/* =============================
+  Portfolio Section Starts
+=============================== */
+#portfolio{
+  margin-top: 4em;
+}
+.portfolio-title{
+  text-align: center;
+  margin-top: .5em;
+  color: var(--secondary-color);
+  font-family: cursive;
+  font-weight: 700;
+}
+.image-gallery{
+margin-top: 5em;
+margin-bottom: 5em;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5em;
+}
+.image-info{
+  padding: 3px;
+}
+.featured-image{
+  background-image: url("../img/features/wp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ddd;
+  box-shadow: 0.1rem 0.1rem 0.1rem  #fff , -0.1rem 0 1rem #fff;
+  position: relative; 
+}
+.image-content{
+  padding:2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.featured-image:hover{
+  background-image: linear-gradient(rgba(13, 87, 245, 0.5), rgba(255, 255, 255, 0.6));
+  transition:transform 0.8s ;
+  -ms-transform:scale(1.1); /* IE 9 */
+  transform: scale(1.1);
+}
+
+
+/* =============================
+  Testimonials Section Starts
+=============================== */
+.testimonials{
+  background-color: var(--secondary-color);
+}
+.testimonials-title{
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom:3em ;
+  color: var(--body-color);
+  font-family: cursive;
+  font-weight: 400;
+}
+.client-area{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-bottom: 5rem;
+}
+.client-info{
+  flex: 1 1 25em;
+  text-align: center;
+  padding: 2rem; 
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  box-shadow: 0.1rem 0.1rem 0.1rem  #ddd  , -0.1rem 0 1rem var(--primary-color);
+}
+.client-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+blockquote{
+  color:#e6e6e6;
+  font-size: 1.1rem;
+  margin: 1em ;
+  letter-spacing:.1rem;
+  font-weight: 300 ;
+}
+blockquote:before, blockquote:after{
+  content:" “ ";
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.client-name,
+.client-title{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.client-name:before,
+.client-title:before{
+  content:" - "
+}
+
+/* =============================
+  Blog Section Starts
+=============================== */
+#blog{
+  background-color: #e6e6e6;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.title-wrapper{
+  margin: 3em 0;
+}
+.blog-posts{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  gap: 2rem;
+}
+.blog-posts > *{
+  flex: 1 1 18em;
+}
+.blog-post{
+  padding:1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.blog-post:before{
+  position: absolute;
+  content: " ";
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #e6e6e6;
+  border-radius: 8px; 
+  z-index: -1; 
+  transform:rotate(4deg); 
+}
+.blog-post:hover{
+ position: sticky;
+ background-color:var(--secondary-color);
+ transition:0.5s ease-in-out;
+}
+.bp-image img{
+  width:100%;
+  height: 100%;
+}
+.bp-content{
+ margin-top: 1em;
+}
+.bp-date{
+font-weight: 600;
+}
+.bp-date a{
+  color: var(--secondary-color);
+ }
+.bp-title{
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.bp-description{
+color: e6e6e6;
+line-height: 1.8;
+}
+.bp-btn a{
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+/* =============================
+  Contact Section Starts
+=============================== */
+#contact{
+  padding: 3rem 0;
+  background-color: #fff;
+}
+.blog-title{
+  color: var(--secondary-color);
+}
+.contact-area{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+line-height:2;
+font-size: 16px;
+}
+.contact-left{
+  flex: 2;
+  margin-right: 1em;
+  font-weight: 600;
+}
+.contact-right{
+  flex:3;
+  margin-left: 1em;
+}
+span{
+  padding: .5rem;
+}
+li.address i,
+li.phone i, 
+li.email i{
+  font-size: 1.2rem; 
+  padding: .5rem ;
+}
+input[type=text], 
+input[type=email], 
+textarea{
+  width: 100%;
+  padding:.8rem;
+  margin: .5em;
+}
+input[type=submit]{
+  width: 25%;
+  padding:.8rem;
+  margin: 1em .5em;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* =============================
+  Footer Section Starts
+=============================== */
+footer{
+  background-color: var(--primary-color);
+  color:white;
+  text-align: center;
+}
+p.statement{
+padding: 2rem 0;
+}
+/* =============================
+  Responsive Design
+=============================== */
+@media screen and (max-width: 1200px) {
+  .services > * {
+    flex:0 1 22em;
+  }
+} 
+@media screen and (max-width: 1100px) {
+    .blog-posts > *{
+    flex: 0 1 25em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .services > * {
+    flex:0 1 20em;
+  }  
+  .blog-posts > *{
+    flex: 0 1 22em;
+  }
+    .contact-left{
+    flex-basis:100%;
+    padding: 2rem;
+   }
+   .contact-right{
+     flex-basis:100% ;
+     padding: 1rem;
+   }
+}
+@media screen and (max-width: 768px) {
+  .blog-posts > *{
+    flex: 0 1 20em;
+  }
+  .contact-left{
+    flex-basis:100%;
+    padding: 2rem;
+   }
+   .contact-right{
+     flex-basis:100% ;
+     padding: 1rem;
+   }
+}
+@media screen and (max-width: 600px) {
+ h1, h2, h3{
+    line-height:2rem;
+  }
+  .blog-posts > *{
+    flex: 0 1 20em;
+  }
+  .contact-left{
+   flex-basis:100%;
+   padding: 2rem;
+  }
+  .contact-right{
+    flex-basis:100% ;
+    padding: 1rem;
+  }
+}
