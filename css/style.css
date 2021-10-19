@@ -502,6 +502,13 @@ padding: 2rem 0;
   }
 }
 @media screen and (max-width: 992px) {
+  .toggle-icon{display: flex;}
+  .navbar{flex-direction: column; align-items: stretch;}
+  .primary-menu ul{ flex-direction: column;width:100% ;position: absolute;top:20%; left:0;min-height: 100vh;} 
+  .nav-menu li{margin-top:10px;text-align:center;}
+  .nav-menu li a{display: block;font-size: 2rem;}
+  .active{display: flex;}
+       
   .services > * {
     flex:0 1 20em;
   }  
