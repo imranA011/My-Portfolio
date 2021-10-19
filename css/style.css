@@ -6,8 +6,7 @@
 :root{
   --primary-color:#0382E1;
   --secondary-color:#1B9CFC;
-  --body-color:#e6e6e6;
-   
+  --body-color:#e6e6e6;   
 }
 *{
   margin: 0;
@@ -270,7 +269,7 @@ gap: 1.5em;
   padding: 3px;
 }
 .featured-image{
-  background-image: url("../img/portfolio/woo1.jpg");
+  background-image: url("../img/portfolio/wp1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
