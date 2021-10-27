@@ -1,354 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!--Page Title-->
   <title>Portfolio Template</title>
- 
+
   <!--Favicon-->
   <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/png">
 
   <!--Font Awesome-->
   <link rel="stylesheet" href="css/font-awesome/all.min.css">
   <link rel="stylesheet" href="css/font-awesome/fontawesome.min.css">
-  
-<!--Main CSS-->
+
+  <!--Main CSS-->
   <link rel="stylesheet" href="css/style.css">
 
-</head> 
+</head>
+
 <body>
 
-  <!-- Header Start -->
-<header>
-  <div class="container">
-    <div class="navbar">
-
-      <!--Logo-->
-      <div class="navbar-brand">
-        <a class="logo" href="index.html">Ahmed <span>Imran</span></a>
-      </div>
-
-      <!--Hamburger Menu-->
-      <div class="toggle-icon">
-        <span class="bars"></span>
-        <span class="bars"></span>
-        <span class="bars"></span>
-      </div>
-
-      <!--Menu-->
-      <nav class="primary-menu">
-        <ul class="nav-menu">
-          <li><a class="current" href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
+<header> 
+  <!-- Navigation -->
+  <div id="nav-menu">
+    <div class="container">
+      <nav class="navbar">
+        <!--Logo-->
+        <div class="navbar-brand">
+          <a class="logo" href="index.html">Ahmed <span>Imran</span></a>
+        </div>
+        <!--Hamburger Menu-->
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <!--Menu-->
+        <div class="primary-menu">
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
       </nav>
-
     </div>
   </div>
-</header>       
-<!--Header End-->
+  <!--Navigation End-->
 
-<!--Header & Hero Divider -->
-<div>
-  <hr class="divider">
-</div>
+  <!--Menu & Hero Divider -->
+  <div>
+    <hr class="divider">
+  </div>
+  <!-- Hero Start-- -->   
+      <div class="hero"> 
+        <div class="container">
+        <h5 class="sub-title sub-title-hero">I am Frelance Web Developer</h5>
+        <h1 class="title title-hero">Ahmed Al Imran</h1>
+        <a href="#" class="btn btn-primary">view Porfolio</a>
+        <a href="#" class="btn btn-secondary">Get A Quote</a>
+      </div>
+    </div>
+  </header>
+  <!-- Header End-- -->
 
-<!-- Banner Section Start-- -->
-  <section id="hero">
+  <!-- About Section Start-- -->
+  <section id="about">
     <div class="container">
-      <h6 class="sub-title">Wordpress Website Design</h6>
-      <h1 class="title">Portfolio Template</h1>
-      
-      <main class="hero-slider">
-
-        <div class="left-col">
-          <h3>Wordpress Developer</h3>
-          <p> This is Imran, a professional freelance engineer and developer from Bangladesh. The field of my competency are WEBSITE DESIGN & DEVELOPMENT (Specially Wordpress & Woocommerce), DATA ENTRY (MS Package) and ARCHITECTURAL DESIGN (Autocad & Sketchup). I have 2 years experience on wordpress customization and web design. I can build professional and eye-catching website for clients using Wordpress. I am confident and hard worker. I love to code and design.</p>
-          <a class="btn" href="#">View Portfolio</a>
+      <h2 class="title title-about">About Me</h2>
+      <div class="about-wrapper">
+        <div class="about-left">
+          <p> This is Imran, a professional freelance engineer and developer from Bangladesh. The field of my competency
+            are WEBSITE DESIGN & DEVELOPMENT (Specially Wordpress & Woocommerce), DATA ENTRY (MS Package) and
+            ARCHITECTURAL DESIGN (Autocad & Sketchup). I have 2 years experience on wordpress customization and web
+            design. I can build professional and eye-catching website for clients using Wordpress. I am confident and
+            hard worker. I love to code and design.</p>
+          <a class="btn btn-primary" href="#">Download CV</a>
         </div>
-
-        <div class="right-col">
-          <img class="brand-image" src="img/about/profile.JPG" alt="brand-image">
-          <ul class="social-media">
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-          </ul> 
-        </div> 
-
-      </main> 
-    </div>            
+        <div class="about-right">
+          <img class="profile-image" src="img/about/profile.jpg" alt="Profile-Image">
+        </div>
+      </div>
+    </div>
   </section>
-  <!--Banner Section End -->
- 
+  <!--About Section End -->
+
   <!-- Service Section Start-->
-  
-  <section>
+  <section id="service">
     <div class="container">
-      <h6 class="sub-title">Provied Servises</h6>
-      <h2 class="service-title">What I do </h2>
+      <h6 class="sub-title-service">Provied Servises</h6>
+      <h2 class="title title-service">What I do </h2>
       <div class="services">
-          <div class="features">
-              <img class="feature-image" src="img/features/wp.jpg" alt="">        
+        <div class="service-wrapper">
+          <div class="service-card">
+            <img class="feature-image" src="img/features/wp.jpg" alt="">
+            <div class="service-card-body">
               <h4>Wordpress</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati cupiditate nobis debitis numquam reiciendis quos, dolore ea quasi perferendis.</p> 
-              <button class="feature-btn">Read More</button> 
-          </div>                       
-
-      <div class="features">        
-          <img class="feature-image" src="img/features/woo.jpg" alt="">
-          <h4>Woocommerce</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati cupiditate nobis debitis numquam reiciendis quos, dolore ea quasi perferendis.</p>
-          <button class="feature-btn">Read More</button>      
-      </div>
-
-      <div class="features">      
-          <img class="feature-image" src="img/features/web.jpg" alt="">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati cupiditate nobis debitis numquam reiciendis quos, dolore ea quasi perferendis.</p>  
-          <button class="feature-btn">Read More</button>      
-      </div>
-
-    </div>        
-  </div>
-</section>
-<!--Service Section End  -->
-
-<!--Portfolio Section Start--> 
-<section id="portfolio">
-  <div class="container">
-    <h6 class="sub-title">Awesome Portfolio</h6>
-    <h2 class="portfolio-title">Some of My Recent Work</h2>
-    <div class="image-gallery">
-
-      <div class="image-info">       
-        <div class="featured-image">      
-          <div class="image-content">
-            <h6 class="category-list">Woocomerce</h6>
-            <h4 class="category-title">SuperShop</h4>
-          </div>
-        </div> 
-      </div>  
-
-        <div class="image-info">       
-          <div class="featured-image">      
-            <div class="image-content">
-              <h6 class="category-list">Woocomerce</h6>
-              <h4 class="category-title">SuperShop</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-          </div>     
+            <a href="#" class="btn btn-block">Create Website</a>
+          </div>
+          <div class="service-card">
+            <img class="feature-image" src="img/features/wp.jpg" alt="">
+            <div class="service-card-body">
+              <h4>Woocommerce</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati cupiditate nobis debitis
+                numquam.</p>
+            </div>
+            <a href="#" class="btn btn-block">Build Store</a>
+          </div>
+          <div class="service-card">
+            <img class="feature-image" src="img/features/wp.jpg" alt="">
+            <div class="service-card-body">
+              <h4>Web Design</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati cupiditate nobis debitis numquam
+              </p>
+            </div>
+            <a href="#" class="btn btn-block">Design Website</a>
+          </div>
         </div>
-        <div class="image-info">       
-          <div class="featured-image">      
-            <div class="image-content">
-              <h6 class="category-list">Woocomerce</h6>
-              <h4 class="category-title">SuperShop</h4>
-            </div>
-          </div> 
-        </div>  
-  
-          <div class="image-info">       
-            <div class="featured-image">      
-              <div class="image-content">
-                <h6 class="category-list">Woocomerce</h6>
-                <h4 class="category-title">SuperShop</h4>
-              </div>
-            </div>     
-          </div>
-
-          <div class="image-info">       
-            <div class="featured-image">      
-              <div class="image-content">
-                <h6 class="category-list">Woocomerce</h6>
-                <h4 class="category-title">SuperShop</h4>
-              </div>
-            </div> 
-          </div>  
-    
-            <div class="image-info">       
-              <div class="featured-image">      
-                <div class="image-content">
-                  <h6 class="category-list">Woocomerce</h6>
-                  <h4 class="category-title">SuperShop</h4>
-                </div>
-              </div>     
-            </div>
-
       </div>
-      
     </div>
-  </div>
-<section>
+  </section>
+  <!--Service Section End  -->
 
+  <!--Portfolio Section Start-->
+  <section id="portfolio">
+    <div class="container-fluid">
+      <h5 class="sub-title-portfolio">Awesome Portfolio</h5>
+      <h2 class="title-portfolio">Some of My Recent Work</h2>
+      <div class="project-wrapper">
+        <div class="project">
+          <img src="img/portfolio/wp1.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Wordpress</h6>
+            <h4 class="categogy-title">Bootstrap Portfolio</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/portfolio/wp2.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Wordpress</h6>
+            <h4 class="categogy-title">Personal Portfolio</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/portfolio/woo1.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Woocoommerce</h6>
+            <h4 class="categogy-title">Personal Portfolio</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/portfolio/woo2.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Woocoommerce</h6>
+            <h4 class="categogy-title">Personal Portfolio</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/portfolio/web1.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Web Design</h6>
+            <h4 class="categogy-title">Personal Portfolio</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/portfolio/web2.jpg" alt="Project Image">
+          <div class="overlay">
+            <h6 class="sub-categogy-title">Web Design</h6>
+            <h4 class="categogy-title">Personal Portfolio</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <!--Portfolio Section End  -->
 
+
 <!--Testimonials Section Start-->
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="testimonials-title">What My Client Says</h2>
-      <div class="client-area">
-
-        <div class="client-info">
-          <img class="client-image" src="img/team/avatar.png"  alt="">
-          <blockquote><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cum</cite></blockquote>
-          <p class="client-name">John Doe</p> 
-          <p class="client-title"> CEO</p> 
-        </div>
-
-        <div class="client-info">
-          <img class="client-image" src="img/team/avatar.png" alt="">
-          <blockquote><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cum</cite></blockquote>
-          <p class="client-name">John Doe</p> 
-          <p class="client-title"> CEO</p> 
-        </div>
-
-      </div>        
-  </section> 
-  <!--Testimonials Section End-->
- 
-  <!--Blog Start-->  
-
-  <section id="blog">
-    <div class="container">
-
-      <div class="title-wrapper">
-          <h2 class="title blog-title ">LATEST BLOG POST</h2>
-      </div>
-
-      <div class="blog-posts">
-       
-            <div class="blog-post">
-
-              <div class="bp-image">
-                <img src="img/blog/blog1.jpg" alt="">
-              </div>
-
-              <div class="bp-content">
-                <div class="bp-date">15 Jan, 2020 in
-                  <a href="#">Web Design</a>
-                </div>
-                <div class="bp-title">
-                  <h3>
-                    <a href="#">Best Web Design Tutorials in Bangla </a>
-                  </h3>                 
-                </div>
-                <div class="bp-description">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, accusamus accusantium quo praesentium provident alias vel eum enim officia incidunt.</p>
-                </div>
-                <div class="bp-btn">
-                  <a href="#">Read More</a>
-                </div>
-              </div> <!--bp-content -->
-              
-            </div> <!--blog-post -->
-
-            <div class="blog-post">
-
-              <div class="bp-image">
-                <img src="img/blog/blog2.jpg" alt="">
-              </div>
-
-              <div class="bp-content">
-                <div class="bp-date">15 Jan, 2020 in
-                  <a href="#">Web Design</a>
-                </div>
-                <div class="bp-title">
-                  <h3>
-                    <a href="#">Best Web Design Tutorials in Bangla </a>
-                  </h3>                 
-                </div>
-                <div class="bp-description">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nulla et omnis nihil beatae nisi earum dicta vel distinctio nobis.</p>
-                </div>
-                <div class="bp-btn">
-                  <a href="#">Read More</a>
-                </div>
-              </div> <!--bp-content -->
-              
-            </div> <!--blog-post -->
-
-            <div class="blog-post">
-
-              <div class="bp-image">
-                <img src="img/blog/blog3.jpg" alt="">
-              </div>
-
-              <div class="bp-content">
-                <div class="bp-date">15 Jan, 2020 in
-                  <a href="#">Web Design</a>
-                </div>
-                <div class="bp-title">
-                  <h3>
-                    <a href="#">Best Web Design Tutorials in Bangla </a>
-                  </h3>                 
-                </div>
-                <div class="bp-description">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi mollitia repellat accusantium quisquam vitae et laudantium quia exercitationem itaque.</p>
-                </div>
-                <div class="bp-btn">
-                  <a href="#">Read More</a>
-                </div>
-              </div> <!--bp-content -->
-              
-            </div> <!--blog-post -->           
-
-          </div><!--blog-posts -->
-    </div>
-  </section>
-
-
-  <!--Blog End--> 
-
-  <!--Contact Start-->
-<section id="contact">
+<section id="testimonials">
   <div class="container">
-    <div class="title-wrapper">
-      <h2 class="title blog-title ">GET IN TOUCH</h2>
-    </div>
-
-    <div class="contact-area">
-      <div class="contact-left">
-        <ul>
-          <li class= "address"><i class="fas fa-map-marker-alt"></i> <span>14 Sti Kilda Road, 1412 New York, USA</span></li>
-          <li class= "phone"><i class="fas fa-phone-volume"></i><span>+12 125 124 8574</span></li>
-          <li class= "email"><i class="far fa-envelope"></i><span>info@example.com</span></li>
-        </ul>
-        
-      </div>
-      <div class="contact-right">
-        <form action="#">
-          <input type="text" name="name" id="name" placeholder="Your Name"><br>
-          <input type="email" name="email" id="email" placeholder="Your Email"><br>
-          <textarea name="" id="" cols=" " rows="5" placeholder="Your Message"></textarea><br>
-          <input type="submit" value="Submit">
-        </form>
-
+    <h2 class="title-testimonials">What My Client Says</h2>
+    <div class="clients">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">         
+        <div class="carousel-inner">            
+          <div class="carousel-item active" data-interval="5000">
+              <div class="img-box">
+                <img src="img/clients/avatar.png" class="client-image" alt="client photo">
+              </div>
+              <div class="carousel-caption">
+                <p class="blockquote client-text">Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet</p>
+                <h5 class="client-name"> <span>Jhon Doe </span> , CEO</h5>
+              </div>
+            </div>                       
+          </div>
       </div>
     </div>
   </div>
-
 </section>
-  <!--Contact Start-->
+<!--Testimonials Section End-->
 
-  <!--Footer Start--> 
+    <!--Blog Start-->
+      <section id="blog">
+        <div class="container">
+          <h1 class="title-blog">Latest News</h1>
+          <div class="blog-wrapper">
+            <div class="blog-post">
+              <div class="card">
+                <img src="img/blog/blog1.jpg" class="card-img-top" alt="Blog Photo">
+                <div class="card-body">
+                  <p>15 Jan, 2020 in <span><a class="blog-category" href="#">Wordpress</a> </span></p>
+                  <h3 class="bp-title"><a href="#">Best Web Design Tutorials in Bangla</a></h3>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis maiores tenetur itaque quam? Aspernatur laborum nobis iusto esse libero!</p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-block" href="#">Continue Reading...</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-post">
+              <div class="card">
+                <img src="img/blog/blog1.jpg" class="card-img-top" alt="Blog Photo">
+                <div class="card-body">
+                  <p>15 Jan, 2020 in <span><a class="blog-category" href="#">Wordpress</a> </span></p>
+                  <h3 class="bp-title"><a href="#">Best Web Design Tutorials in Bangla</a></h3>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis maiores tenetur itaque quam? Aspernatur laborum nobis iusto esse libero!</p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-block" href="#">Continue Reading...</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-post">
+              <div class="card">
+                <img src="img/blog/blog1.jpg" class="card-img-top" alt="Blog Photo">
+                <div class="card-body">
+                  <p>15 Jan, 2020 in <span><a class="blog-category" href="#">Wordpress</a> </span></p>
+                  <h3 class="bp-title"><a href="#">Best Web Design Tutorials in Bangla</a></h3>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis maiores tenetur itaque quam? Aspernatur laborum nobis iusto esse libero!</p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-block" href="#">Continue Reading...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Blog End-->
+
+  <!--Contact Section Start-->
+  <section id="contact">
+    <div class="container">
+      <h1 class="title-contact">Get in Touch</h1>
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h4>Contact Information</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i><span>169, Ka, Uttra, Dhaka-1230</span></p>
+            <p><i class="fas fa-phone-alt"></i><span>+880 1685 982377</span></p>
+            <p><i class="far fa-envelope"></i><span>contact@imran.com</span></p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="form" action="#" method="post">
+            <input type="text" name="" id="" placeholder="Your Name" required>
+            <input type="email" name="" id="" placeholder="Your Email"
+              required>
+            <textarea name="" id="" rows="5"
+              placeholder="Write Message Here..."></textarea>
+            <input class="btn btn-submit" type="submit"
+              value="Send Message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Start-->
   <footer>
     <div class="container">
-      <p class="statement">Copyright &copy-2021 All right reserved</p>
-    </div>          
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>&copycopyright-2021; All right reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+          <div class="social-link">           
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-<!--Footer End  -->
-
-
-
- <script src="js/main.js"></script>
-
+  <!--Footer End  -->
+  
+  <script src="js/main.js"></script>
+  
 </body>
+
 </html>
