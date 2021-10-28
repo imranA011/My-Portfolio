@@ -577,7 +577,7 @@ footer{
   }
   .toggle-button{ display: flex;}
   .primary-menu{ display: none;width: 100%;}
-  .navbar{flex-direction: column;align-items: flex-start;}
+  .navbar{flex-direction: column;justify-content: center;align-items: flex-start;}
   .primary-menu ul{flex-direction: column;width: 100%;}
   .primary-menu ul li{margin:5px 0;text-align:center;}
   .primary-menu ul li a{font-size: 1.2rem;}
