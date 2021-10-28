@@ -575,7 +575,14 @@ footer{
   .navbar-brand{
     font-size: 2.5rem;
   }
-    /* ===Heading===*/
+  .toggle-button{ display: flex;}
+  .primary-menu{ display: none;width: 100%;}
+  .navbar{flex-direction: column;align-items: flex-start;}
+  .primary-menu ul{flex-direction: column;width: 100%;}
+  .primary-menu ul li{margin:5px 0;text-align:center;}
+  .primary-menu ul li a{font-size: 1.2rem;}
+  .primary-menu.active{display: flex;}     
+   /* ===Heading===*/
   .title-hero{
     font-size: 4rem;
   }
@@ -671,14 +678,4 @@ footer{
 }
 
 
-@media screen and (max-width: 992px) {
-  .toggle-button{ display: flex;}
-  .primary-menu{ display: none;width: 100%;}
-  .navbar{flex-direction: column;align-items: flex-start;}
-  .primary-menu ul{flex-direction: column;width: 100%;}
-  /* .primary-menu{flex-direction: column;width:100% ;position: absolute;top:20%; left:0;min-height: 100vh;}  */
-  .primary-menu ul li{margin:5px 0;text-align:center;}
-  .primary-menu ul li a{font-size: 1.2rem;}
-  .primary-menu.active{display: flex;} 
-} 
 
