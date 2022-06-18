@@ -5,4 +5,4 @@ This repo belongs to:
 # FLEXBOX
 
 # My Portfolio :
-https://imrana011.github.io/My-Portfolio/
+https://imrana011.github.io/Portfolio/
